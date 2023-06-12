@@ -1,23 +1,21 @@
-public class printNumber{
+public class printNumber {
     public static void main(String[] args) {
-        int n = 10 ;
+        int n = 10;
 
-        printTillN(n);
+        print(n);
 
-        
     }
 
-   
+    public static void print(int n) {
 
-    public static void printTillN(int n){
-        if(n<1){
+        if (n < 1) {
             return;
         }
-
         System.out.println(n);
-
-        printTillN(n-1);
+        
+        print(n - 1);
 
         System.out.println(n);
     }
+
 }

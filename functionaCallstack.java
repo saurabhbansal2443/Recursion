@@ -9,6 +9,9 @@ public class functionaCallstack
 	public static void printHello(){
 	    System.out.println("Print Hello Started ");
 	    PrintWorld();
+		if(true){
+		return ;
+		}
 	     System.out.println("Print Hello end");
 	}
 	
