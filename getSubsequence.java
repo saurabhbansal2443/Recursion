@@ -3,11 +3,8 @@ import java.util.ArrayList;
 public class getSubsequence {
     public static void main(String[] args) {
         String str = "abc";
-
         ArrayList<String> res = subsequence(str);
-
         System.out.println(res);
-
     }
 
     public static ArrayList<String> subsequence(String str) {
@@ -17,7 +14,6 @@ public class getSubsequence {
             base.add("");
             return base;
         }
-
         char ch = str.charAt(0);
         String rem = str.substring(1);
 
@@ -25,10 +21,17 @@ public class getSubsequence {
 
         ArrayList<String> ans = new ArrayList<>();
 
-        for (String s : rres) {
+        // for (String s : rres) {
+
+        //     ans.add(s);
+        //     ans.add(ch + s);
+        // }
+
+        for(int i=0;i<rres.size();i++){
+            String s=rres.get(i);
 
             ans.add(s);
-            ans.add(ch + s);
+            ans.add(ch+s);
         }
 
         return ans;
